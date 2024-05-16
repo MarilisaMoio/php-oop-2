@@ -62,10 +62,10 @@
                     <div>Taglia: <?= $product->size ?></div>
                     <div>Peso: <?= $product->weight ?></div>
                 <?php } elseif ($product->productType === "toy") { ?>
-                    <div>Materiale: <?= $product->material ?></div>
+                    <div>Materiale: <?= $product->getMaterial() ?></div>
                 <?php } elseif ($product->productType === "bed") { ?>
                     <div>Dimensioni: <?= $product->size ?></div>
-                    <div>Materiale: <?= $product->material ?></div>
+                    <div>Materiale: <?= $product->getMaterial() ?></div>
                     <div>Lavabile: <?= $product->washable ? "sì" : "no" ?></div>
                 <?php } ?>
             </div>
